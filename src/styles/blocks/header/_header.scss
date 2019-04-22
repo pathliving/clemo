@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  margin-bottom: 5rem;
+  position: relative;
+
+  &__nav {
+    margin-top: 6.5rem;
+    margin-left: auto;
+    display: block;
+  }
+
+  &__logo {
+    padding-top: 6.35rem;
+  }
+
+  &__banner {
+    margin-top: 6.9rem;
+  }
+}
