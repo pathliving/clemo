@@ -1,4 +1,5 @@
 .nav {
+  animation: fade-left ease-out 0.8s;
   display: flex;
   list-style: none;
   padding: 0;
@@ -45,5 +46,20 @@
     &:active {
       color: $black;
     }
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
