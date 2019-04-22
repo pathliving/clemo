@@ -1,0 +1,49 @@
+.nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-end;
+
+  &__item {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-left: 2.7rem;
+    text-decoration: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $gray;
+    position: relative;
+
+    &:after {
+      content: '';
+      background-color: $black;
+      height: 0.2rem;
+      left: 0;
+      top: 100%;
+      opacity: 0;
+      position: absolute;
+      transition: width 0.7s, opacity 0.3s;
+      width: 0;
+    }
+
+    &:hover {
+      color: $black;
+
+      &:after {
+        opacity: 1;
+        width: 60%;
+      }
+    }
+
+    &:active {
+      color: $black;
+    }
+  }
+}
