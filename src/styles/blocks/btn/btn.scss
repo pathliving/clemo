@@ -29,10 +29,15 @@
     background-color: $white;
     border: 1px solid $gray-light;
     color: $black;
+    min-width: 17rem;
 
     &:hover {
       background-color: $white;
       border: 1px solid $black;
     }
+  }
+
+  &:focus {
+    outline: none;
   }
 }
