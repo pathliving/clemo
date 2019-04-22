@@ -5,6 +5,7 @@
   flex-direction: column;
   height: 52rem;
   width: 100%;
+  animation: fade-top ease-in-out 0.5s;
 
   &__title {
     color: $black;
@@ -14,7 +15,7 @@
     position: relative;
     text-decoration: none;
     outline: none;
-    transition: color 0.3s;
+    animation: fade-top ease-in-out 1s;
 
     &:focus {
       outline: none;
@@ -40,9 +41,37 @@
     text-align: center;
     font-weight: 400;
     letter-spacing: -0.03rem;
+    animation: fade-top ease-in-out 1s;
   }
 
   &__btn {
     margin-top: 7.3rem;
+    animation: fade-right ease-out 0.8s;
+  }
+}
+
+@keyframes fade-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  30% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
