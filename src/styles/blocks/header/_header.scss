@@ -10,10 +10,22 @@
   }
 
   &__logo {
+    animation: fade-right ease-out 0.8s;
     padding-top: 6.35rem;
   }
 
   &__banner {
     margin-top: 6.9rem;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
   }
 }
