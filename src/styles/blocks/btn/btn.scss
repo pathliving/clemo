@@ -1,0 +1,38 @@
+.btn {
+  background-color: $black;
+  border: 1px solid $black;
+  border-radius: 5rem;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  min-height: 5rem;
+  line-height: 2.1rem;
+  padding: 1.2rem 3rem;
+  vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  white-space: nowrap;
+  user-select: none;
+  touch-action: manipulation;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+  &:hover {
+    color: $black;
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+  }
+
+  &--white {
+    background-color: $white;
+    border: 1px solid $gray-light;
+    color: $black;
+
+    &:hover {
+      background-color: $white;
+      border: 1px solid $black;
+    }
+  }
+}
