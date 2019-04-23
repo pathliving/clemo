@@ -4,6 +4,7 @@
 //! utilities / helpers
 @import "./styles/utils/mixins";
 @import "./styles/utils/variables";
+@import "./styles/utils/animation";
 
 //! site-wide base styles
 @import "./styles/base/setup"; /* normalize, clearfix, border-box, anti-aliasing, grey-scale */
