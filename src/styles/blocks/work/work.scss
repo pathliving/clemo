@@ -24,8 +24,9 @@
   }
 
   &__link {
-    margin-top: 2.3rem;
     animation: fade-top ease-in-out 1s;
+    margin-top: 2.3rem;
+    min-width: 17rem;
   }
 
   &-wrapper {
