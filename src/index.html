@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="Description" content="professionals in the creative industries">
-
-  <link rel="stylesheets" href="css/">
 </head>
 
 <body>
@@ -78,7 +76,9 @@
                   </div>
                   <div class="col-lg-6">
                     <div class="services__description">
-                      <h3 class="services__name">creative<br><span class="services__name--bold">kitchen</span></h3>
+                      <a class="services__name-link" href="#">
+                        <h3 class="services__name">creative<br><span class="services__name--bold">kitchen</span></h3>
+                      </a>
                       <p class="services__text">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                         doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
@@ -97,7 +97,9 @@
                 <div class="row no-gutters">
                   <div class="col-lg-6">
                     <div class="services__description services__description--even">
-                      <h3 class="services__name">art<br><span class="services__name--bold">installation</span></h3>
+                      <a class="services__name-link" href="#">
+                        <h3 class="services__name">art<br><span class="services__name--bold">installation</span></h3>
+                      </a>
                       <p class="services__text">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                         doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
@@ -111,8 +113,8 @@
                     </div>
                   </div>
                   <div class="col-lg-6">
-                    <div class="services__img-wrapper services__img--even">
-                      <img class="services__img" src="images/560x560.jpg" alt="services-image">
+                    <div class="services__img-wrapper">
+                      <img class="services__img services__img--even" src="images/560x560.jpg" alt="services-image">
                     </div>
                   </div>
                 </div>
@@ -126,7 +128,9 @@
                   </div>
                   <div class="col-lg-6">
                     <div class="services__description">
-                      <h3 class="services__name">print<br><span class="services__name--bold">design</span></h3>
+                      <a class="services__name-link" href="#">
+                        <h3 class="services__name">print<br><span class="services__name--bold">design</span></h3>
+                      </a>
                       <p class="services__text">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                         doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
@@ -158,16 +162,40 @@
             </div>
             <div class="row">
               <div class="col-lg-4">
-                <img class="work__img-preview work__img-preview--top" src="images/364x364.jpg" alt="work-image">
-                <img class="work__img-preview work__img-preview--bottom" src="images/364x590.jpg" alt="work-image">
+                <figure class="work__img">
+                  <img class="work__img-preview work__img-preview--top" src="images/364x364.jpg" alt="work-image">
+                  <figcaption><cite class="work__img-author">golfino<br>awards</cite></figcaption>
+                  <span class="work__img-position">print design</span>
+                </figure>
+                <figure class="work__img">
+                  <img class="work__img-preview work__img-preview--bottom" src="images/364x590.jpg" alt="work-image">
+                  <figcaption><cite class="work__img-author">james<br>brown</cite></figcaption>
+                  <span class="work__img-position">web design</span>
+                </figure>
               </div>
               <div class="col-lg-4">
-                <img class="work__img-preview work__img-preview--top" src="images/364x590.jpg" alt="work-image">
-                <img class="work__img-preview work__img-preview--bottom" src="images/364x364.jpg" alt="work-image">
+                <figure class="work__img">
+                  <img class="work__img-preview work__img-preview--top" src="images/364x590.jpg" alt="work-image">
+                  <figcaption><cite class="work__img-author">helen<br>rose</cite></figcaption>
+                  <span class="work__img-position">graphic design</span>
+                </figure>
+                <figure class="work__img">
+                  <img class="work__img-preview work__img-preview--bottom" src="images/364x364.jpg" alt="work-image">
+                  <figcaption><cite class="work__img-author">golfino<br>awards</cite></figcaption>
+                  <span class="work__img-position">print design</span>
+                </figure>
               </div>
               <div class="col-lg-4">
-                <img class="work__img-preview work__img-preview--top" src="images/364x364.jpg" alt="work-image">
-                <img class="work__img-preview work__img-preview--bottom" src="images/364x590.jpg" alt="work-image">
+                <figure class="work__img">
+                  <img class="work__img-preview work__img-preview--top" src="images/364x364.jpg" alt="work-image">
+                  <figcaption><cite class="work__img-author">james<br>brown</cite></figcaption>
+                  <span class="work__img-position">web design</span>
+                </figure>
+                <figure class="work__img">
+                  <img class="work__img-preview work__img-preview--bottom" src="images/364x590.jpg" alt="work-image">
+                  <figcaption><cite class="work__img-author">helen<br>rose</cite></figcaption>
+                  <span class="work__img-position">graphic design</span>
+                </figure>
               </div>
             </div>
             <div class="row">
@@ -188,33 +216,69 @@
           <div class="col-lg-12">
             <section class="content__team team">
               <h2 class="team__title">best team</h2>
-              <ul class="team__list d-flex justify-content-center">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <li class="team__member">
-                        <img class="team__avatar" src="images/168x168.jpg" alt="avatar">
-                        <span class="team__name">paul hall</span>
-                        <span class="team__position">art director</span>
-                    </li>
-                  </div>
-                  <div class="col-lg-4">
-                    <li class="team__member">
-                        <img class="team__avatar" src="images/168x168.jpg" alt="avatar">
-                        <span class="team__name">joshua spencer</span>
-                        <span class="team__position">founder</span>
-                    </li>
-                  </div>
-                  <div class="col-lg-4">
-                    <li class="team__member">
+              <ul class="team__list">
+                <div class="col-lg-4">
+                  <li class="team__member">
                       <img class="team__avatar" src="images/168x168.jpg" alt="avatar">
-                      <span class="team__name">diane lewis</span>
-                      <span class="team__position">artist, designer</span>
-                    </li>
-                  </div>
+                      <span class="team__name">paul hall</span>
+                      <span class="team__position">art director</span>
+                  </li>
+                </div>
+                <div class="col-lg-4">
+                  <li class="team__member">
+                      <img class="team__avatar" src="images/168x168.jpg" alt="avatar">
+                      <span class="team__name">joshua spencer</span>
+                      <span class="team__position">founder</span>
+                  </li>
+                </div>
+                <div class="col-lg-4">
+                  <li class="team__member">
+                    <img class="team__avatar" src="images/168x168.jpg" alt="avatar">
+                    <span class="team__name">diane lewis</span>
+                    <span class="team__position">artist, designer</span>
+                  </li>
                 </div>
               </ul>
             </section>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <section class="content__feedback feedback">
+            <h2 class="feedback__title">clients say’s</h2>
+            <div class="row">
+              <div class="col-lg-6">
+                <span class="feedback__author">frank sims</span>
+                <span class="feedback__position">photographer</span>
+              </div>
+              <div class="col-lg-6">
+                <p class="feedback__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                  architecto beatae vitae dicta sunt explicabo.
+                </p>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row justify-content-around">
+                <div class="col-lg-3">
+                  <img class="feedback__img-preview" src="images/266x140.jpg" alt="feedback-image">
+                </div>
+                <div class="col-lg-3">
+                  <img class="feedback__img-preview" src="images/266x140.jpg" alt="feedback-image">
+                </div>
+                <div class="col-lg-3">
+                  <img class="feedback__img-preview" src="images/266x140.jpg" alt="feedback-image">
+                </div>
+                <div class="col-lg-3">
+                  <img class="feedback__img-preview" src="images/266x140.jpg" alt="feedback-image">
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
