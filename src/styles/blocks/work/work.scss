@@ -9,6 +9,62 @@
   }
 
   &__img {
+    cursor: pointer;
+    position: relative;
+
+    &-author {
+      display: none;
+    }
+
+    &-position {
+      display: none;
+    }
+
+    &:hover {
+
+      .work__img-author {
+        display: block;
+        position: absolute;
+        bottom: 2.8rem;
+        left: 2.8rem;
+        width: 100%;
+        text-align: center;
+        background-color: $color-primary;
+        color: $black;
+        height: 30.8rem;
+        width: 30.8rem;
+        z-index: 1;
+        padding-top: 8rem;
+        animation: fade-top ease-in-out 0.3s;
+        font-size: 4rem;
+        line-height: 4.2rem;
+        font-weight: bold;
+        font-style: normal;
+
+        &:after {
+          content: '';
+          position: absolute;
+          background-color: $black;
+          height: 0.2rem;
+          left: 40%;
+          width: 5.7rem;
+          bottom: 11rem;
+        }
+      }
+
+      .work__img-position {
+          display: block;
+          position: absolute;
+          bottom: 8rem;
+          width: 100%;
+          text-align: center;
+          z-index: 2;
+          animation: fade ease-in-out 0.5s;
+          font-size: 1.8rem;
+          line-height: 4.8rem;
+          font-weight: 200;
+      }
+    }
 
     &-preview {
       margin-bottom: 2.75rem;

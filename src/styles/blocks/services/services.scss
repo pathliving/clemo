@@ -21,21 +21,26 @@
 
     &-wrapper {
     animation: fade-right ease-in-out 0.8s;
+    position: relative;
+    height: 56rem;
     }
 
     &--even {
       animation: fade-left ease-in-out 0.8s;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
   }
 
   &__description {
     animation: fade-left ease-in-out 1s;
-    padding-left: 6.8rem;
+    padding-left: 8.5rem;
 
     &--even {
       animation: fade-right ease-in-out 0.8s;
       padding-left: 0;
-      padding-right: 11rem;
+      padding-right: 9rem;
     }
   }
 
@@ -54,12 +59,10 @@
     line-height: 1.1rem;
     position: relative;
     margin-bottom: 3.1rem;
+    transition: color 0.3s;
 
-    &--bold {
-      font-size: 4.7rem;
-      font-weight: bold;
-      line-height: 7.5rem;
-      letter-spacing: 0.3px;
+    &:hover {
+      color: $color-primary;
     }
 
     &:after {
@@ -71,18 +74,34 @@
       top: 9.3rem;
       width: 5.7rem;
     }
+
+    &--bold {
+      font-size: 4.7rem;
+      font-weight: bold;
+      line-height: 7.5rem;
+      letter-spacing: 0.3px;
+      transition: color 0.3s;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    &-link {
+      color: $black;
+      display: inline-block;
+    }
   }
 
   &__text {
     font-size: 1.8rem;
     letter-spacing: 0.02rem;
     line-height: 2.7rem;
-    margin-top: 2.7rem;
+    margin-bottom: 2.7rem;
     font-weight: 100;
   }
 
   &__link {
     animation: fade-top ease-in-out 1s;
-    margin-top: 4.2rem;
+    margin-top: 1.7rem;
   }
 }

@@ -9,6 +9,8 @@
   }
 
   &__list {
+    display: flex;
+    justify-content: center;
     margin-top: 9.75rem;
   }
 
@@ -42,6 +44,7 @@
       left: 40%;
       top: 125%;
       width: 6rem;
+      animation: fade ease-in-out 3s;
     }
   }
 
