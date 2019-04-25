@@ -18,6 +18,11 @@
   }
 
   &__img {
+    transition: transform ease 0.2s;
+
+    &:hover {
+      transform: scale(0.99);
+    }
 
     &-wrapper {
     animation: fade-right ease-in-out 0.8s;
@@ -89,6 +94,10 @@
     &-link {
       color: $black;
       display: inline-block;
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 
@@ -101,7 +110,14 @@
   }
 
   &__link {
-    animation: fade-top ease-in-out 1s;
-    margin-top: 1.7rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &-btn {
+      animation: fade-top ease-in-out 1s;
+      margin-top: 1.7rem;
+    }
   }
 }

@@ -6,6 +6,7 @@
   font-weight: 100;
   text-align: center;
   margin-bottom: 8.3rem;
+  animation: fade-top ease-in-out 1s;
   }
 
   &__author {
@@ -17,6 +18,13 @@
     text-align: right;
     padding-right: 6.7rem;
     letter-spacing: -0.09rem;
+    color: $black;
+    transition: color ease 0.3s;
+    animation: fade-right ease-in-out 1s;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
 
     &:after {
       content: '';
@@ -37,6 +45,8 @@
     text-align: right;
     padding-right: 6.7rem;
     letter-spacing: -0.02rem;
+    color: $black;
+    animation: fade-left ease-in-out 1s;
   }
 
   &__text {
@@ -45,16 +55,29 @@
     margin-top: 0.65rem;
     padding-right: 6rem;
     letter-spacing: -0.02rem;
+    color: $black;
+    animation: fade-left ease-in-out 1s;
   }
 
   &__img {
     &-preview {
       margin-top: 7.2rem;
+      transition: transform ease 0.2s;
+      animation: fade-bottom ease-in-out 1s;
+
+      &:hover {
+        transform: scale(0.95);
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 
-  &__items-wrapper {
-    display: flex;
-    justify-content: space-between;
+  &__link {
+    &:focus {
+      outline: none;
+    }
   }
 }

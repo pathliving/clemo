@@ -22,18 +22,6 @@
     color: $gray;
     position: relative;
 
-    &:after {
-      content: '';
-      background-color: $black;
-      height: 0.2rem;
-      left: 0;
-      top: 100%;
-      opacity: 0;
-      position: absolute;
-      transition: width 0.7s, opacity 0.3s;
-      width: 0;
-    }
-
     &:hover {
       color: $black;
 
@@ -45,6 +33,22 @@
 
     &:active {
       color: $black;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:after {
+      content: '';
+      background-color: $black;
+      height: 0.2rem;
+      left: 0;
+      top: 100%;
+      opacity: 0;
+      position: absolute;
+      transition: width 0.7s, opacity 0.3s;
+      width: 0;
     }
   }
 }
