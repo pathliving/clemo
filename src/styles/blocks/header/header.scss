@@ -1,7 +1,11 @@
 .header {
-  display: flex;
-  margin-bottom: 5rem;
-  position: relative;
+  padding-bottom: 6rem;
+  background-color: $white;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+
 
   &__nav {
     margin-top: 6.5rem;
@@ -13,8 +17,16 @@
     animation: fade ease-out 1.3s;
     padding-top: 6.35rem;
   }
+}
 
-  &__banner {
-    margin-top: 6.9rem;
-  }
+.fixed {
+  position: fixed;
+  padding-bottom: 5rem;
+  top: -2rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  animation: fade-top ease 0.3s;
+}
+
+.fixed + .content {
+  margin-top: 16rem;
 }
