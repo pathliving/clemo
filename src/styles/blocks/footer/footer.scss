@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fade-bottom ease-in-out 1s;
+
+  &__copyright {
+    color: $black;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: bold;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__personal-data {
+    color: $gray;
+    font-weight: 200;
+
+    &:hover {
+      color: $gray-dark;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
