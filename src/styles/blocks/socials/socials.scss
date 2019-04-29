@@ -1,0 +1,121 @@
+.socials {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 4.2rem;
+
+  &__item {
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+    background-color: $white;
+    border-radius: 50%;
+    transition: background-color ease .2s;
+    animation: fade-bottom ease-in-out 1s;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__link {
+    font-size: 0;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &--facebook {
+      background: url('images/facebook.png') no-repeat 50% 50%;
+      height: 4rem;
+      width: 4rem;
+      position: absolute;
+
+      &:hover {
+        background-color: #3F579A;
+        border-radius: 50%;
+        border: none;
+        height: 4.2rem;
+        width: 4.2rem;
+        top: -0.1rem;
+        left: -0.1rem;
+        transition: background-color ease-in-out .3s;
+      }
+    }
+
+    &--twitter {
+      background: url('images/twitter.png') no-repeat 50% 50%;
+      height: 4rem;
+      width: 4rem;
+      position: absolute;
+
+      &:hover {
+        background-color: #359FF5;
+        border-radius: 50%;
+        border: none;
+        height: 4.2rem;
+        width: 4.2rem;
+        top: -0.1rem;
+        left: -0.1rem;
+        transition: background-color ease-in-out .3s;
+      }
+    }
+
+    &--google {
+      background: url('images/google.png') no-repeat 50% 50%;
+      height: 4rem;
+      width: 4rem;
+      position: absolute;
+
+      &:hover {
+        background-color: #D94E35;
+        border-radius: 50%;
+        border: none;
+        height: 4.2rem;
+        width: 4.2rem;
+        top: -0.1rem;
+        left: -0.1rem;
+        transition: background-color ease-in-out .3s;
+      }
+    }
+
+    &--pinterest {
+      background: url('images/pinterest.png') no-repeat 50% 50%;
+      height: 4rem;
+      width: 4rem;
+      position: absolute;
+
+      &:hover {
+        background-color: #E10D1E;
+        border-radius: 50%;
+        border: none;
+        height: 4.2rem;
+        width: 4.2rem;
+        top: -0.1rem;
+        left: -0.1rem;
+        transition: background-color ease-in-out .3s;
+      }
+    }
+
+    &--instagram {
+      background: url('images/instagram.png') no-repeat 50% 50%;
+      height: 4rem;
+      width: 4rem;
+      position: absolute;
+
+      &:hover {
+        background-color: #6C5045;
+        border-radius: 50%;
+        border: none;
+        height: 4.2rem;
+        width: 4.2rem;
+        top: -0.1rem;
+        left: -0.1rem;
+        transition: background-color ease-in-out .3s;
+      }
+    }
+  }
+}
