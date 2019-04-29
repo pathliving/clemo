@@ -1,4 +1,5 @@
 .work {
+  background-color: $white;
 
   &__title {
     font-size: 6rem;
@@ -69,7 +70,7 @@
     }
 
     &-preview {
-      margin-bottom: 2.75rem;
+      margin-bottom: 1.6rem;
 
       &--top {
         animation: fade-top ease-in-out 1s;
@@ -92,10 +93,5 @@
       margin-top: 2.3rem;
       min-width: 17rem;
     }
-  }
-
-  &-wrapper {
-    display: flex;
-    justify-content: center;
   }
 }

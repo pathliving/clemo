@@ -18,7 +18,7 @@
   }
 
   &__img {
-    transition: transform ease 0.2s;
+    transition: transform ease .2s;
 
     &:hover {
       transform: scale(0.99);
@@ -64,7 +64,7 @@
     line-height: 1.1rem;
     position: relative;
     margin-bottom: 3.1rem;
-    transition: color 0.3s;
+    transition: color .3s;
 
     &:hover {
       color: $color-primary;
@@ -85,7 +85,7 @@
       font-weight: bold;
       line-height: 7.5rem;
       letter-spacing: 0.3px;
-      transition: color 0.3s;
+      transition: color .3s;
       &:hover {
         color: $color-primary;
       }

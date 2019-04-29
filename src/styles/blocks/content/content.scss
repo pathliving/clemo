@@ -1,28 +1,36 @@
 .content {
+  margin-top: 1rem;
+
+  &__banner {
+    margin-bottom: -11.7rem;
+  }
 
   &__services {
-  margin-top: 3.5rem;
+    padding-top: 20.2rem;
+    margin-bottom: -13.5rem;
   }
 
   &__work {
-    margin-top: 7rem;
-    margin-bottom: 5rem;
+    padding-top: 20.2rem;
   }
 
   &__team {
-    padding-top: 8.5rem;
+    padding-top: 20rem;
+    padding-bottom: 6.5rem;
+    margin-bottom: -11.5rem;
   }
 
   &__feedback {
-    margin-top: 8.5rem;
-    margin-bottom: 10rem;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
   }
 
   &__contacts {
-    padding-top: 9rem;
+    padding-top: 8.5rem;
+    padding-bottom: 10rem;
   }
 
   &__footer {
-    padding: 4.6rem 0;
+    padding: 3.9rem 0;
   }
 }

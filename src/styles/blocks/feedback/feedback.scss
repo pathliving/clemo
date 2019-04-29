@@ -19,7 +19,7 @@
     padding-right: 6.7rem;
     letter-spacing: -0.09rem;
     color: $black;
-    transition: color ease 0.3s;
+    transition: color ease .3s;
     animation: fade-right ease-in-out 1s;
 
     &:hover {
@@ -62,7 +62,7 @@
   &__img {
     &-preview {
       margin-top: 7.2rem;
-      transition: transform ease 0.2s;
+      transition: transform ease .2s;
       animation: fade-bottom ease-in-out 1s;
 
       &:hover {

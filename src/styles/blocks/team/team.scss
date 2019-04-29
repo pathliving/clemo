@@ -1,4 +1,14 @@
 .team {
+  background-color: $color-primary;
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 11.5rem;
+    background-color: $white;
+    width: 100%;
+    transform: translateY(-200px);
+  }
 
   &__title {
     text-align: center;
@@ -27,7 +37,7 @@
   &__avatar {
     animation: wave ease-in-out 1s;
     border-radius: 50%;
-    transition: transform ease 0.2s;
+    transition: transform ease .2s;
 
     &:hover {
       transform: scale(1.05);
@@ -45,7 +55,7 @@
     text-align: center;
     width: 100%;
     color: $black;
-    transition: color ease 0.3s;
+    transition: color ease .3s;
 
     &:hover {
       color: rgba(0, 0, 0, 0.7);
@@ -78,11 +88,5 @@
     &:focus {
       outline: none;
     }
-  }
-
-  &__bg-wrapper {
-    background-color: $color-primary;
-    height: 60rem;
-    width: 100%;
   }
 }
