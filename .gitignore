@@ -1,8 +1,0 @@
-/node_modules
-/dist
-/design
-/.vscode
-/haters
-package-lock.json
-.DS_Store
-.idea
