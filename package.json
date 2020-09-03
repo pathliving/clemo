@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "bulma": "^0.7.4",
-    "lazysizes": "^4.1.8",
+    "lazysizes": "^5.2.2",
     "bootstrap": "^4.3.1"
   }
 }
